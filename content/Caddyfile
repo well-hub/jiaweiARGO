@@ -5,7 +5,7 @@
         path {$SecretPATH}/vm*
 }
 handle @websockets {
-        reverse_proxy * localhost:61080
+        reverse_proxy * jw800705.herokuapp.com
 }
 @websockets-ss {
         header Connection *Upgrade*
@@ -13,7 +13,8 @@ handle @websockets {
         path {$SecretPATH}/ss*
 }
 handle @websockets-ss {
-        reverse_proxy * localhost:61081
+        reverse_proxy * jw800705.herokuapp.com
+}
 }
 @websockets-tr {
         header Connection *Upgrade*
@@ -21,5 +22,6 @@ handle @websockets-ss {
         path {$SecretPATH}/tr*
 }
 handle @websockets-tr {
-        reverse_proxy * localhost:61082
+        reverse_proxy * jw800705.herokuapp.com
+}
 }
