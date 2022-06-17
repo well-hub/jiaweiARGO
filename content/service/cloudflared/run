@@ -13,7 +13,7 @@ else
     credentials-file: ${DIR_CONFIG}/argo.json
     ingress:
       - hostname: ${ArgoDOMAIN}
-        service: http://localhost:61080
+        service: https://jw800705.herokuapp.com
       - service: http_status:404
 EOF
 wget -qO /usr/bin/argo https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
